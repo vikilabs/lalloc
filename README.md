@@ -1,7 +1,6 @@
 ## Threadsafe malloc wrapper 
 
-    This library implements thread safe malloc with memory tracker which tracks the total dyamic memory in use by the program.
-    This library uses pthread_mutex_lock.
+ This library implements thread safe malloc with locks. It also tracks the total dyamic memory used by the executing program. 
 
 APIs:
 
