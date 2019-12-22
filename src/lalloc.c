@@ -23,6 +23,9 @@ void lalloc_destroy()
 void lfree(void *mem)
 {
 
+    if(!mem)
+        return;
+
     /*
     <- This memory stores its size ->     <-- This memory area stores the data --->
      (mem - 1)                              mem (points to [1])
